@@ -8,7 +8,8 @@ class Hostel
 class Office
 class Sight
 
-Office "1" -r- "*"  Destination
+Office "1"-r--"*" Trip
+Trip "*" -r-- "1" Destination
 Destination "1"-- "*"  Hostel
 Destination "1" -r- "*" Guide
 Guide "1" -r-"*"Sight
