@@ -1,0 +1,17 @@
+
+[plantuml]
+----
+@startuml
+class Destination
+class Guide
+class Hostel
+class Office
+class Sight
+
+Office "1" -r- "*"  Destination
+Destination "1"-- "*"  Hostel
+Destination "1" -r- "*" Guide
+Guide "1" -r-"*"Sight
+
+@enduml
+----
