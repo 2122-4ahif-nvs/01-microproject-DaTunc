@@ -1,5 +1,6 @@
 package org.acme.boundary;
 
+import org.acme.controll.GuideRepository;
 import org.acme.controll.OfficeRepository;
 import org.acme.entity.Office;
 
@@ -14,12 +15,17 @@ public class ReisebüroTunc {
 
     @Inject
     OfficeRepository or;
+    @Inject
+    GuideRepository gr;
 
     @Path("/")
     @GET
     @Produces("application/json")
     public List<Office> getAllOffices(){
+        gr.persist(gr.listAll());
         return or.getAllOffices();
     }
+
+
 
 }
