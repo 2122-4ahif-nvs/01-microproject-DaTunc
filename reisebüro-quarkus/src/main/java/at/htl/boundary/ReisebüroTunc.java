@@ -1,8 +1,8 @@
-package org.acme.boundary;
+package at.htl.boundary;
 
-import org.acme.controll.GuideRepository;
-import org.acme.controll.OfficeRepository;
-import org.acme.entity.Office;
+import at.htl.controll.GuideRepository;
+import at.htl.controll.OfficeRepository;
+import at.htl.entity.Office;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;

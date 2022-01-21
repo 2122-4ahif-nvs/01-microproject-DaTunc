@@ -1,6 +1,6 @@
-package org.acme.controll;
+package at.htl.controll;
 
-import org.acme.entity.Hostel;
+import at.htl.entity.Sight;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -8,12 +8,13 @@ import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
 @ApplicationScoped
-public class HostelRepository {
+public class SightRepository {
     @Inject
     EntityManager em;
 
     @Transactional
-    public Hostel save(Hostel hostel){
-        return em.merge(hostel);
+    public Sight save (Sight sight){
+        return em.merge(sight);
     }
+
 }

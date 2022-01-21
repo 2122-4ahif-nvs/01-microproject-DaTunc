@@ -1,6 +1,6 @@
-package org.acme.controll;
+package at.htl.controll;
 
-import org.acme.entity.Office;
+import at.htl.entity.Office;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
